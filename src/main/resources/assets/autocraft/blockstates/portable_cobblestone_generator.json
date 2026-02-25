@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "autocraft:block/portable_cobblestone_generator"
+    },
+    "facing=east": {
+      "model": "autocraft:block/portable_cobblestone_generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "autocraft:block/portable_cobblestone_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autocraft:block/portable_cobblestone_generator",
+      "y": 270
+    }
+  }
+}

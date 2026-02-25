@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "autocraft:basic_blast_furnace",
+    "autocraft:portable_cobblestone_generator"
+  ]
+}

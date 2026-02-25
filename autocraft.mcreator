@@ -1,0 +1,516 @@
+{
+  "mod_elements": [
+    {
+      "name": "PortableCobblestoneGenerator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portable_cobblestone_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/llz/autocraft/block/entity/PortableCobblestoneGeneratorBlockEntity.java",
+          "src/main/resources/assets/autocraft/models/item/portable_cobblestone_generator.json",
+          "src/main/resources/data/autocraft/loot_table/blocks/portable_cobblestone_generator.json",
+          "src/main/java/net/llz/autocraft/block/PortableCobblestoneGeneratorBlock.java",
+          "src/main/resources/assets/autocraft/blockstates/portable_cobblestone_generator.json",
+          "src/main/resources/assets/autocraft/models/block/portable_cobblestone_generator.json"
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "GuiTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_title",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/GuiTitleProcedure.java"
+        ]
+      },
+      "path": "~/Lang/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "GuiEnableStatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_enable_status",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/GuiEnableStatusProcedure.java"
+        ]
+      },
+      "path": "~/Lang/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "GUIPortableCobblestoneGenerator",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_portable_cobblestone_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/llz/autocraft/world/inventory/GUIPortableCobblestoneGeneratorMenu.java",
+          "src/main/java/net/llz/autocraft/client/gui/GUIPortableCobblestoneGeneratorScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ProcessPortableCobblestoneGenerator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "process_portable_cobblestone_generator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/ProcessPortableCobblestoneGeneratorProcedure.java"
+        ]
+      },
+      "path": "~/Process/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "ProcessPCGActivated",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "process_pcg_activated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/ProcessPCGActivatedProcedure.java"
+        ]
+      },
+      "path": "~/Process/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "TriggerCorrector",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger_corrector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/llz/autocraft/item/TriggerCorrectorItem.java",
+          "src/main/resources/assets/autocraft/models/item/trigger_corrector.json"
+        ]
+      },
+      "path": "~/Tool"
+    },
+    {
+      "name": "ProcessPCGUnctivated",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "process_pcg_unctivated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/ProcessPCGUnctivatedProcedure.java"
+        ]
+      },
+      "path": "~/Process/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "ChangeTriggerMethod",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_trigger_method",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/ChangeTriggerMethodProcedure.java"
+        ]
+      },
+      "path": "~/Process/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "IronPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/llz/autocraft/item/IronPlateItem.java",
+          "src/main/resources/assets/autocraft/models/item/iron_plate.json"
+        ]
+      },
+      "path": "~/Material"
+    },
+    {
+      "name": "GoldPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/autocraft/models/item/gold_plate.json",
+          "src/main/java/net/llz/autocraft/item/GoldPlateItem.java"
+        ]
+      },
+      "path": "~/Material"
+    },
+    {
+      "name": "IronForgingHammer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_forging_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/autocraft/models/item/iron_forging_hammer.json",
+          "src/main/java/net/llz/autocraft/item/IronForgingHammerItem.java"
+        ]
+      },
+      "path": "~/Tool"
+    },
+    {
+      "name": "RecipeIronForgingHammer",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_iron_forging_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/autocraft/recipe/recipe_iron_forging_hammer.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "RecipeIronPlate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_iron_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/autocraft/recipe/recipe_iron_plate.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "RecipeGoldPlate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_gold_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/autocraft/recipe/recipe_gold_plate.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "BaseAlloyPlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "base_alloy_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/llz/autocraft/item/BaseAlloyPlateItem.java",
+          "src/main/resources/assets/autocraft/models/item/base_alloy_plate.json"
+        ]
+      },
+      "path": "~/Material"
+    },
+    {
+      "name": "TabMaterial",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_material",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TabMachine",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_machine",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TabTool",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_tool",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BasicBlastFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/autocraft/blockstates/basic_blast_furnace.json",
+          "src/main/java/net/llz/autocraft/block/BasicBlastFurnaceBlock.java",
+          "src/main/resources/assets/autocraft/models/item/basic_blast_furnace.json",
+          "src/main/resources/data/autocraft/loot_table/blocks/basic_blast_furnace.json",
+          "src/main/resources/assets/autocraft/models/block/basic_blast_furnace.json"
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "TipTextTriggerCorrector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tip_text_trigger_corrector",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/TipTextTriggerCorrectorProcedure.java"
+        ]
+      },
+      "path": "~/Lang/TriggerCorrector"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BasicBlastFurnace",
+      "~CUSTOM:PortableCobblestoneGenerator"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BasicBlastFurnace",
+      "~CUSTOM:PortableCobblestoneGenerator"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:IronForgingHammer"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.autocraft.portable_cobblestone_generator": "Portable Cobblestone Generator",
+      "gui.portablecobblestonegenerator.title": "Portable Cobblestone Generator",
+      "gui.portablecobblestonegenerator.enablestatus": "Enable?",
+      "gui.autocraft.gui_portable_cobblestone_generator.enable_status": "",
+      "item.autocraft.trigger_corrector": "Trigger Corrector",
+      "status.pcg.triggermethod.1": "Stops working when activated by redstone",
+      "status.pcg.triggermethod.2": "Works when activated by redstone",
+      "status.pcg.triggermethod.3": "Keep working",
+      "status.pcg.triggermethod.4": "Never work",
+      "info.pcg.triggermethod.check": "Current trigger method: §b",
+      "info.pcg.triggermethod.change": "Trigger method has been changed to: §a",
+      "item.autocraft.iron_plate": "Iron Plate",
+      "item.autocraft.gold_plate": "Gold Plate",
+      "item.autocraft.iron_forging_hammer": "Iron Forging Hammer",
+      "item.autocraft.base_alloy_plate": "Base Alloy Plate",
+      "item_group.autocraft.tab_material": "AutoCraft - Material",
+      "item_group.autocraft.tab_machine": "AutoCraft - Machine",
+      "item_group.autocraft.tab_tool": "AutoCraft - Tool",
+      "block.autocraft.basic_blast_furnace": "Basic Blast Furnace",
+      "tiptext.trigger_corrector.line1": "§bLeft Click §7to check mechanical trigger mode",
+      "tiptext.trigger_corrector.line2": "§bShift + Left Click §7to change the mechanical trigger mode"
+    },
+    "zh_cn": {
+      "block.autocraft.portable_cobblestone_generator": "便携式圆石制造机",
+      "gui.portablecobblestonegenerator.title": "便携式圆石制造机",
+      "gui.portablecobblestonegenerator.enablestatus": "是否启用？",
+      "gui.autocraft.gui_portable_cobblestone_generator.enable_status": "",
+      "item.autocraft.trigger_corrector": "触发矫正器",
+      "status.pcg.triggermethod.1": "红石激活时停止工作",
+      "status.pcg.triggermethod.2": "红石激活时工作",
+      "status.pcg.triggermethod.3": "保持工作",
+      "status.pcg.triggermethod.4": "永不工作",
+      "info.pcg.triggermethod.check": "现在的触发方式：§b",
+      "info.pcg.triggermethod.change": "触发方式已更改至： §a",
+      "item.autocraft.iron_plate": "铁板",
+      "item.autocraft.gold_plate": "金板",
+      "item.autocraft.iron_forging_hammer": "铁质加工锤",
+      "item.autocraft.base_alloy_plate": "基础合金板",
+      "item_group.autocraft.tab_material": "自动工艺 - 材料",
+      "item_group.autocraft.tab_machine": "自动工艺 - 机械",
+      "item_group.autocraft.tab_tool": "自动工艺 - 工具",
+      "block.autocraft.basic_blast_furnace": "基础高炉",
+      "tiptext.trigger_corrector.line1": "§b左键§7 检查机械触发方式",
+      "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/llz/autocraft/init/AutocraftModMenus.java",
+      "src/main/java/net/llz/autocraft/init/AutocraftModScreens.java",
+      "src/main/java/net/llz/autocraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/llz/autocraft/init/AutocraftModBlocks.java",
+      "src/main/java/net/llz/autocraft/init/AutocraftModBlockEntities.java",
+      "src/main/java/net/llz/autocraft/init/AutocraftModItems.java",
+      "src/main/java/net/llz/autocraft/init/AutocraftModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/llz/autocraft/AutocraftMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Lang",
+        "children": [
+          {
+            "name": "PortableCobblestoneGenerator",
+            "children": []
+          },
+          {
+            "name": "TriggerCorrector",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Material",
+        "children": []
+      },
+      {
+        "name": "Recipe",
+        "children": []
+      },
+      {
+        "name": "Tool",
+        "children": []
+      },
+      {
+        "name": "Machine",
+        "children": []
+      },
+      {
+        "name": "Process",
+        "children": [
+          {
+            "name": "PortableCobblestoneGenerator",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "GUI",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "autocraft",
+    "modName": "AutoCraft",
+    "version": "26.0.0+build.12",
+    "author": "LLZ_Argentum",
+    "websiteURL": "https://0.net",
+    "license": "Apache License version 2.0",
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "-",
+    "modElementsPackage": "net.llz.autocraft"
+  },
+  "mcreatorVersion": 202500345720
+}

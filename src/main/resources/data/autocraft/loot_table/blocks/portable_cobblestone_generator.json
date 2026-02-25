@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "autocraft:blocks/portable_cobblestone_generator",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "autocraft:portable_cobblestone_generator"
+        }
+      ]
+    }
+  ]
+}

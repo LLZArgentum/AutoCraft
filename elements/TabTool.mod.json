@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "AutoCraft - Tool",
+    "icon": {
+      "value": "CUSTOM:IronForgingHammer"
+    },
+    "showSearch": false
+  }
+}

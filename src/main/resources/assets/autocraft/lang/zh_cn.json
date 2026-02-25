@@ -1,0 +1,23 @@
+{
+  "block.autocraft.portable_cobblestone_generator": "便携式圆石制造机",
+  "gui.portablecobblestonegenerator.title": "便携式圆石制造机",
+  "gui.portablecobblestonegenerator.enablestatus": "是否启用？",
+  "gui.autocraft.gui_portable_cobblestone_generator.enable_status": "",
+  "item.autocraft.trigger_corrector": "触发矫正器",
+  "status.pcg.triggermethod.1": "红石激活时停止工作",
+  "status.pcg.triggermethod.2": "红石激活时工作",
+  "status.pcg.triggermethod.3": "保持工作",
+  "status.pcg.triggermethod.4": "永不工作",
+  "info.pcg.triggermethod.check": "现在的触发方式：§b",
+  "info.pcg.triggermethod.change": "触发方式已更改至： §a",
+  "item.autocraft.iron_plate": "铁板",
+  "item.autocraft.gold_plate": "金板",
+  "item.autocraft.iron_forging_hammer": "铁质加工锤",
+  "item.autocraft.base_alloy_plate": "基础合金板",
+  "item_group.autocraft.tab_material": "自动工艺 - 材料",
+  "item_group.autocraft.tab_machine": "自动工艺 - 机械",
+  "item_group.autocraft.tab_tool": "自动工艺 - 工具",
+  "block.autocraft.basic_blast_furnace": "基础高炉",
+  "tiptext.trigger_corrector.line1": "§b左键§7 检查机械触发方式",
+  "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式"
+}
