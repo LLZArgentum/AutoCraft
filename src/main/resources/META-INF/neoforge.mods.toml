@@ -4,7 +4,7 @@ license="Apache License version 2.0"
 
 [[mods]]
 modId="autocraft"
-version="26.0.0.16"
+version="26.0.0.18"
 displayName="AutoCraft"
 displayURL="https://0.net"
 logoFile="logo.png"
