@@ -19,5 +19,9 @@
   "item_group.autocraft.tab_tool": "自动工艺 - 工具",
   "block.autocraft.basic_blast_furnace": "基础高炉",
   "tiptext.trigger_corrector.line1": "§b左键§7 检查机械触发方式",
-  "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式"
+  "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式",
+  "tiptext.pcg.line1": "§7工业用造石机的便携型。可在离电状态下工作，效率较低，无法安装升级。",
+  "tiptext.pcg.line2": "速度：§b0.5 个/秒",
+  "tiptext.pcg.line3": "§c无法安装升级",
+  "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。"
 }

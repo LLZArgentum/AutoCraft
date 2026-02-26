@@ -1,5 +1,8 @@
 package net.llz.autocraft.block;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -12,9 +15,13 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
@@ -25,13 +32,17 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 
 import net.llz.autocraft.world.inventory.GUIPortableCobblestoneGeneratorMenu;
+import net.llz.autocraft.procedures.TiptextPCGProcedure;
 import net.llz.autocraft.procedures.ProcessPortableCobblestoneGeneratorProcedure;
 import net.llz.autocraft.procedures.ProcessPCGUnctivatedProcedure;
 import net.llz.autocraft.procedures.ProcessPCGActivatedProcedure;
 import net.llz.autocraft.procedures.ChangeTriggerMethodProcedure;
 import net.llz.autocraft.block.entity.PortableCobblestoneGeneratorBlockEntity;
+
+import java.util.List;
 
 import io.netty.buffer.Unpooled;
 
@@ -44,6 +55,19 @@ public class PortableCobblestoneGeneratorBlock extends Block implements EntityBl
 	public PortableCobblestoneGeneratorBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TRIGGER_METHOD, 0).setValue(ENABLE_STATUS, true).setValue(ACTIVE_STATUS, false));
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = TiptextPCGProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

@@ -59,7 +59,8 @@
     ],
     "name": "Portable Cobblestone Generator",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "TiptextPCG"
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -19,5 +19,9 @@
   "item_group.autocraft.tab_tool": "AutoCraft - Tool",
   "block.autocraft.basic_blast_furnace": "Basic Blast Furnace",
   "tiptext.trigger_corrector.line1": "§bLeft Click §7to check mechanical trigger mode",
-  "tiptext.trigger_corrector.line2": "§bShift + Left Click §7to change the mechanical trigger mode"
+  "tiptext.trigger_corrector.line2": "§bShift + Left Click §7to change the mechanical trigger mode",
+  "tiptext.pcg.line1": "§7Portable industrial stone-making machine.Can operate without power, but efficiency is low and upgrades cannot be installed.",
+  "tiptext.pcg.line2": "Speed: §b0.5 per second",
+  "tiptext.pcg.line3": "§cUnable to install the update",
+  "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal."
 }

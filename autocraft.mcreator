@@ -368,6 +368,21 @@
         ]
       },
       "path": "~/Lang/TriggerCorrector"
+    },
+    {
+      "name": "TiptextPCG",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiptext_pcg",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/TiptextPCGProcedure.java"
+        ]
+      },
+      "path": "~/Lang/PortableCobblestoneGenerator"
     }
   ],
   "variable_elements": [],
@@ -408,7 +423,11 @@
       "item_group.autocraft.tab_tool": "AutoCraft - Tool",
       "block.autocraft.basic_blast_furnace": "Basic Blast Furnace",
       "tiptext.trigger_corrector.line1": "§bLeft Click §7to check mechanical trigger mode",
-      "tiptext.trigger_corrector.line2": "§bShift + Left Click §7to change the mechanical trigger mode"
+      "tiptext.trigger_corrector.line2": "§bShift + Left Click §7to change the mechanical trigger mode",
+      "tiptext.pcg.line1": "§7Portable industrial stone-making machine.Can operate without power, but efficiency is low and upgrades cannot be installed.",
+      "tiptext.pcg.line2": "Speed: §b0.5 per second",
+      "tiptext.pcg.line3": "§cUnable to install the update",
+      "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal."
     },
     "zh_cn": {
       "block.autocraft.portable_cobblestone_generator": "便携式圆石制造机",
@@ -431,7 +450,11 @@
       "item_group.autocraft.tab_tool": "自动工艺 - 工具",
       "block.autocraft.basic_blast_furnace": "基础高炉",
       "tiptext.trigger_corrector.line1": "§b左键§7 检查机械触发方式",
-      "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式"
+      "tiptext.trigger_corrector.line2": "§bShift + 左键§7 切换机械触发方式",
+      "tiptext.pcg.line1": "§7工业用造石机的便携型。可在离电状态下工作，效率较低，无法安装升级。",
+      "tiptext.pcg.line2": "速度：§b0.5 个/秒",
+      "tiptext.pcg.line3": "§c无法安装升级",
+      "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。"
     }
   },
   "metadata": {
@@ -498,7 +521,7 @@
   "workspaceSettings": {
     "modid": "autocraft",
     "modName": "AutoCraft",
-    "version": "26.0.0+build.12",
+    "version": "26.0.0+build.16",
     "author": "LLZ_Argentum",
     "websiteURL": "https://0.net",
     "license": "Apache License version 2.0",
