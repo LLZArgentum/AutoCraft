@@ -32,7 +32,7 @@ public class GUIPortableCobblestoneGeneratorMenu extends AbstractContainerMenu i
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 2)
+			if (!this.containsKey(key) && this.size() >= 3)
 				return null;
 			return super.put(key, value);
 		}
@@ -89,7 +89,7 @@ public class GUIPortableCobblestoneGeneratorMenu extends AbstractContainerMenu i
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 35) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 53) {
 			private final int slot = 0;
 			private int x = GUIPortableCobblestoneGeneratorMenu.this.x;
 			private int y = GUIPortableCobblestoneGeneratorMenu.this.y;

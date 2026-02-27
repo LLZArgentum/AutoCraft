@@ -27,6 +27,7 @@ public class AutocraftModItems {
 	public static final DeferredItem<Item> IRON_FORGING_HAMMER;
 	public static final DeferredItem<Item> BASE_ALLOY_PLATE;
 	public static final DeferredItem<Item> BASIC_BLAST_FURNACE;
+	public static final DeferredItem<Item> BASIC_HEAT_FLOW_SUPPLY_TANK;
 	static {
 		PORTABLE_COBBLESTONE_GENERATOR = block(AutocraftModBlocks.PORTABLE_COBBLESTONE_GENERATOR, new Item.Properties().fireResistant());
 		TRIGGER_CORRECTOR = REGISTRY.register("trigger_corrector", TriggerCorrectorItem::new);
@@ -35,6 +36,7 @@ public class AutocraftModItems {
 		IRON_FORGING_HAMMER = REGISTRY.register("iron_forging_hammer", IronForgingHammerItem::new);
 		BASE_ALLOY_PLATE = REGISTRY.register("base_alloy_plate", BaseAlloyPlateItem::new);
 		BASIC_BLAST_FURNACE = block(AutocraftModBlocks.BASIC_BLAST_FURNACE);
+		BASIC_HEAT_FLOW_SUPPLY_TANK = block(AutocraftModBlocks.BASIC_HEAT_FLOW_SUPPLY_TANK);
 	}
 
 	// Start of user code block custom items

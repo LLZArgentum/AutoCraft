@@ -383,16 +383,50 @@
         ]
       },
       "path": "~/Lang/PortableCobblestoneGenerator"
+    },
+    {
+      "name": "BasicHeatFlowSupplyTank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_heat_flow_supply_tank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/autocraft/blockstates/basic_heat_flow_supply_tank.json",
+          "src/main/resources/assets/autocraft/models/block/basic_heat_flow_supply_tank.json",
+          "src/main/resources/data/autocraft/loot_table/blocks/basic_heat_flow_supply_tank.json",
+          "src/main/java/net/llz/autocraft/block/BasicHeatFlowSupplyTankBlock.java",
+          "src/main/resources/assets/autocraft/models/item/basic_heat_flow_supply_tank.json"
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "TipTextBasicHotFlowSupplyTank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tip_text_basic_hot_flow_supply_tank",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/llz/autocraft/procedures/TipTextBasicHotFlowSupplyTankProcedure.java"
+        ]
+      },
+      "path": "~/Lang/BasicHeatFlowSupplyTank"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BasicHeatFlowSupplyTank",
       "~CUSTOM:BasicBlastFurnace",
       "~CUSTOM:PortableCobblestoneGenerator"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BasicHeatFlowSupplyTank",
       "~CUSTOM:BasicBlastFurnace",
       "~CUSTOM:PortableCobblestoneGenerator"
     ],
@@ -427,7 +461,13 @@
       "tiptext.pcg.line1": "§7Portable industrial stone-making machine.Can operate without power, but efficiency is low and upgrades cannot be installed.",
       "tiptext.pcg.line2": "Speed: §b0.5 per second",
       "tiptext.pcg.line3": "§cUnable to install the update",
-      "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal."
+      "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal.",
+      "block.autocraft.basic_heat_flow_supply_tank": "Basic Heat Flow Supply Tank",
+      "tiptext.basic_hfst.line1": "§7Use fuel to supply heat to other machinery.",
+      "tiptext.basic_hfst.line2": "Compatible with machinery:§a Basic Blast Furnace",
+      "tiptext.basic_hfst.line3": "Supply Level:§b Level I (10 ht/s)",
+      "patchouli.guide.name": "AutoCraft Integration Manual",
+      "patchouli.guide.landing_text": "Welcome to AutoCraft. This is a mod focused on achieving full automation of mainstream item production, and it also features unique automation development content."
     },
     "zh_cn": {
       "block.autocraft.portable_cobblestone_generator": "§8便携式圆石制造机",
@@ -454,7 +494,13 @@
       "tiptext.pcg.line1": "§7工业用造石机的便携型。可在离电状态下工作，效率较低，无法安装升级。",
       "tiptext.pcg.line2": "速度：§b0.5 个/秒",
       "tiptext.pcg.line3": "§c无法安装升级",
-      "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。"
+      "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。",
+      "block.autocraft.basic_heat_flow_supply_tank": "§a基础热流供应罐",
+      "tiptext.basic_hfst.line1": "§7使用燃料向其他机械供应热量。",
+      "tiptext.basic_hfst.line2": "适配机械：§a 基础高炉",
+      "tiptext.basic_hfst.line3": "供应等级：§b I级（10ht/s）",
+      "patchouli.guide.name": "自动工艺集成手册",
+      "patchouli.guide.landing_text": "欢迎来到AutoCraft。这是一个注重实现主流物品全自动化生产的模组，除此之外还有独一无二的自动化发展内容。"
     }
   },
   "metadata": {
@@ -483,6 +529,10 @@
           },
           {
             "name": "TriggerCorrector",
+            "children": []
+          },
+          {
+            "name": "BasicHeatFlowSupplyTank",
             "children": []
           }
         ]
@@ -521,7 +571,7 @@
   "workspaceSettings": {
     "modid": "autocraft",
     "modName": "AutoCraft",
-    "version": "26.0.0+build.18",
+    "version": "26.0.0+build.22",
     "author": "LLZ_Argentum",
     "websiteURL": "https://0.net",
     "license": "Apache License version 2.0",

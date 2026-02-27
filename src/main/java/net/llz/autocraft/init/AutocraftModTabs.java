@@ -19,6 +19,7 @@ public class AutocraftModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.autocraft.tab_machine")).icon(() -> new ItemStack(AutocraftModBlocks.PORTABLE_COBBLESTONE_GENERATOR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(AutocraftModBlocks.PORTABLE_COBBLESTONE_GENERATOR.get().asItem());
 				tabData.accept(AutocraftModBlocks.BASIC_BLAST_FURNACE.get().asItem());
+				tabData.accept(AutocraftModBlocks.BASIC_HEAT_FLOW_SUPPLY_TANK.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB_TOOL = REGISTRY.register("tab_tool",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.autocraft.tab_tool")).icon(() -> new ItemStack(AutocraftModItems.IRON_FORGING_HAMMER.get())).displayItems((parameters, tabData) -> {

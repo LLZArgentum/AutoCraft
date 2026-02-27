@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "autocraft:block/basic_heat_flow_supply_tank"
+    },
+    "facing=east": {
+      "model": "autocraft:block/basic_heat_flow_supply_tank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "autocraft:block/basic_heat_flow_supply_tank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "autocraft:block/basic_heat_flow_supply_tank",
+      "y": 270
+    }
+  }
+}

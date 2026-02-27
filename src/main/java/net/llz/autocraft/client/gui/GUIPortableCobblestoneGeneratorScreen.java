@@ -51,6 +51,7 @@ public class GUIPortableCobblestoneGeneratorScreen extends AbstractContainerScre
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(ResourceLocation.parse("autocraft:textures/screens/icon_portable.png"), this.leftPos + 78, this.topPos + 25, 0, 0, 16, 16, 16, 16);
 		RenderSystem.disableBlend();
 	}
 

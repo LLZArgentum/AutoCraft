@@ -36,7 +36,17 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 204,
-          "y": 71,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "icon_portable.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 62,
           "locked": false
         }
       }

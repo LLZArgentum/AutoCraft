@@ -23,5 +23,11 @@
   "tiptext.pcg.line1": "§7Portable industrial stone-making machine.Can operate without power, but efficiency is low and upgrades cannot be installed.",
   "tiptext.pcg.line2": "Speed: §b0.5 per second",
   "tiptext.pcg.line3": "§cUnable to install the update",
-  "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal."
+  "tiptext.trigger_corrector.line3": "§7Can be used to change the trigger method when a machine receives a redstone signal.",
+  "block.autocraft.basic_heat_flow_supply_tank": "Basic Heat Flow Supply Tank",
+  "tiptext.basic_hfst.line1": "§7Use fuel to supply heat to other machinery.",
+  "tiptext.basic_hfst.line2": "Compatible with machinery:§a Basic Blast Furnace",
+  "tiptext.basic_hfst.line3": "Supply Level:§b Level I (10 ht/s)",
+  "patchouli.guide.name": "AutoCraft Integration Manual",
+  "patchouli.guide.landing_text": "Welcome to AutoCraft. This is a mod focused on achieving full automation of mainstream item production, and it also features unique automation development content."
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "autocraft:block/machine_bottom",
+    "up": "autocraft:block/blast_furnace_side",
+    "north": "autocraft:block/heat_flow_supply_tank_side1",
+    "east": "autocraft:block/machine_1",
+    "south": "autocraft:block/heat_flow_supply_tank_side2",
+    "west": "autocraft:block/machine_1",
+    "particle": "autocraft:block/machine_bottom"
+  },
+  "render_type": "solid"
+}

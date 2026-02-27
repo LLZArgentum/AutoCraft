@@ -2,12 +2,12 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "blast_furnace_side",
-    "textureTop": "machine_bottom",
+    "texture": "machine_bottom",
+    "textureTop": "blast_furnace_side",
     "textureLeft": "machine_1",
-    "textureFront": "blast_furnace_front",
+    "textureFront": "heat_flow_supply_tank_side1",
     "textureRight": "machine_1",
-    "textureBack": "machine_up_1",
+    "textureBack": "heat_flow_supply_tank_side2",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,
@@ -39,9 +39,10 @@
       }
     ],
     "customProperties": [],
-    "name": "Basic Blast Furnace",
+    "name": "Basic Heat Flow Supply Tank",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "TipTextBasicHotFlowSupplyTank"
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -23,5 +23,11 @@
   "tiptext.pcg.line1": "§7工业用造石机的便携型。可在离电状态下工作，效率较低，无法安装升级。",
   "tiptext.pcg.line2": "速度：§b0.5 个/秒",
   "tiptext.pcg.line3": "§c无法安装升级",
-  "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。"
+  "tiptext.trigger_corrector.line3": "§7可用于更改机械受红石信号时的触发方式。",
+  "block.autocraft.basic_heat_flow_supply_tank": "§a基础热流供应罐",
+  "tiptext.basic_hfst.line1": "§7使用燃料向其他机械供应热量。",
+  "tiptext.basic_hfst.line2": "适配机械：§a 基础高炉",
+  "tiptext.basic_hfst.line3": "供应等级：§b I级（10ht/s）",
+  "patchouli.guide.name": "自动工艺集成手册",
+  "patchouli.guide.landing_text": "欢迎来到AutoCraft。这是一个注重实现主流物品全自动化生产的模组，除此之外还有独一无二的自动化发展内容。"
 }
